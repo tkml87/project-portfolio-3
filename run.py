@@ -19,6 +19,24 @@ def get_valid_name():
             print("Hey, it's an invalid name! Only alphabetic characters.")
 
 
+def get_user_answer():
+    while True:
+        user_input = input("Choose between (A, B, C, or D): ").upper()
+        if user_input in ['A', 'B', 'C', 'D']:
+            return user_input
+        else:
+            print("Hey! It's an invalid option! It may be A, B, C, or D.")
+
+
+def check_answer(user_answer, correct_answer):
+    if user_answer == correct_answer:
+        print("Correct!\n")
+        return 1
+    else:
+        print(f"Wrong! The correct answer is {correct_answer}.\n")
+        return 0
+
+
 def run_quiz(questions, alternatives, correct_answers, user_name):
     score = 0
     for i in range(len(questions)):
@@ -60,6 +78,7 @@ def main():
                   @@@@@@@@@@@@((.....&&&.....(#@@@@@@@@@@@
                   @@@@@@@@@@@@@@(((((((((((((@@@@@@@@@@@@@
                   @@@@@@@@@@@@@@@@@@(((((@@@@@@@@@@@@@@@@@
+                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
         """
     )
