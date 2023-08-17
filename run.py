@@ -4,12 +4,14 @@
 # - Ask for user to start the game by him/herserlf
 # Load questions
 # Receive answers and value them
-# - Refrain user from put anything as answer; Accpecting A, B, C or D as answer
+# - Refrain user from put anything as answer, accepting A, B, C or D as answer
 # Finish the quiz informing the score and asking about restart
 
+# Libraries used
 import time
 
 
+# Ask user's name and valid only max 10 alphabetical characters length
 def get_valid_name():
     while True:
         name = input("First of all, what's your name? ")
@@ -19,15 +21,18 @@ def get_valid_name():
             print("Hey, it's an invalid name! Only alphabetic characters.")
 
 
+# Receive answers
 def get_user_answer():
     while True:
         user_input = input("Choose between (A, B, C, or D): ").upper()
         if user_input in ['A', 'B', 'C', 'D']:
             return user_input
+        # Refrain user from put any answer, accepting A, B, C or D as answer
         else:
             print("Hey! It's an invalid option! It may be A, B, C, or D.")
 
 
+# Scoring function
 def check_answer(user_answer, correct_answer):
     if user_answer == correct_answer:
         print("Correct!\n")
@@ -37,6 +42,7 @@ def check_answer(user_answer, correct_answer):
         return 0
 
 
+# Load questions, check and value answers
 def run_quiz(questions, alternatives, correct_answers, user_name):
     score = 0
     for i in range(len(questions)):

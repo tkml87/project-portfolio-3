@@ -12,6 +12,7 @@ Visit the deployed site: [Percy Jackson's Quiz](https://percy-jackson-4c68baad7d
 ## CONTENTS
 
 - [PERCY JACKSON'S QUIZ](#percy-jacksons-quiz)
+  - [How to Play](#play)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
@@ -24,6 +25,9 @@ Visit the deployed site: [Percy Jackson's Quiz](https://percy-jackson-4c68baad7d
     - [Acknowledgments](#acknowledgments)
 
 ---
+
+## How to Play
+
 
 
 ## Features
@@ -51,7 +55,7 @@ Only Python was used to create this project.
 
 ## Deployment
 
-The site was deployed using Heroku - <https://quiz-hb-42254c2dcb8.herokuapp.com/>
+The site was deployed using Heroku - <https://percy-jackson-4c68baad7d9e.herokuapp.com/>
 
 I followed the below steps when deploying my project to Heroku, based on the Code Institute instructions:
 
