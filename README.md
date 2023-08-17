@@ -13,7 +13,6 @@ Visit the deployed site: [Percy Jackson's Quiz](https://percy-jackson-4c68baad7d
 
 - [PERCY JACKSON'S QUIZ](#percy-jacksons-quiz)
   - [How to Play](#play)
-  - [Features](#features)
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
@@ -28,12 +27,17 @@ Visit the deployed site: [Percy Jackson's Quiz](https://percy-jackson-4c68baad7d
 
 ## How to Play
 
+The game opens with the Howling Books symbol and greeting and asks for the user's name;
 
+Then, it asks the user to start the game themselves;
 
-## Features
+The questions are loaded. There are 5 of them, with 4 possible options each;
 
-The website comprises the "Home" page with a header in ASCII showing an image of a wolf.
+The game receives the answers and evaluates them, but prevents the user from putting anything as a valid answer, accepting only A, B, C or D as an answer;
 
+At the end of the quiz, it tells you your score and asks you to restart;
+
+If the user aborts the restart, it shows a final message about following the author on Spotify, where he reads the books. 
 
 ## Technologies Used
 
@@ -94,7 +98,7 @@ NodeJS
 
 ## AUTOMATED TESTING
 
-The game prevents the user from puting non-characters as name, inputing an answer that's differ from A, B, C and D, as well proceeding without confirm it. It contains a score validation and the user has 2 types of final messages depending on his/her performance.
+The game prevents the user from puting non-characters as name, inputing an answer that's differ from A, B, C and D, as well proceeding without confirm it. It contains a score validation and the user has 2 types of final messages depending on his/her performance. Due to its simplicity, there are no known bugs.
 
 The code has been tested by using [PEP8](https://pep8ci.herokuapp.com/).
 ![PEP8 Validation](assets/images/testing.PNG)

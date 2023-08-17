@@ -4,7 +4,7 @@
 # - Ask for user to start the game by him/herserlf
 # Load questions
 # Receive answers and value them
-# - Refrain user from put anything as answer, accepting A, B, C or D as answer
+# - Refrain user from put any answer, accepting A, B, C or D as valid answer
 # Finish the quiz informing the score and asking about restart
 
 # Libraries used
