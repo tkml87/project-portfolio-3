@@ -7,6 +7,15 @@
 # - Refrain user from put anything as answer; Accpecting A, B, C or D as answer
 # Finish the quiz informing the score and asking about restart
 
+def get_valid_name():
+    while True:
+        name = input("First of all, what's your name? ")
+        if name.isalpha() and 2 <= len(name) <= 10:
+            return name
+        else:
+            print("Hey, it's an invalid name! Only alphabetic characters.")
+
+
 def main():
     print(
         """
@@ -29,6 +38,18 @@ def main():
 
         """
     )
+    print("""Test your knowledge about the three first books of Percy Jackson
+with the next 5 questions!\n""")
+    user_name = get_valid_name()
+    print(f"Welcome, {user_name}! Let's start? (press Y for yes)")
+    answer_user = input("Any other key will cancel the quiz ").upper()
+
+    if answer_user != "Y":
+        print(f"Ok, {user_name} I hope to see you again")
+        quit()
+    else:
+        print("Starting...")
+    
     questions = [
         "Why is Percy declared 'undetermined' when he first gets to camp?",
         "In 'the Lightning Thief', why is Percy wanted in the mortal world?",
