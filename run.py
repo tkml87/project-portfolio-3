@@ -1,3 +1,5 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Conception:
+# Ask user's name
+# Load questions
+# Receive answers and value them
+# Finish the quiz informing the score and asking about restart
