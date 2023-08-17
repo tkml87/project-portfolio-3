@@ -46,7 +46,7 @@ def run_quiz(questions, alternatives, correct_answers, user_name):
 
         user_input = get_user_answer()
         score += check_answer(user_input, correct_answers[i])
-    
+
     time.sleep(1)
     print("Bravo!! We're now counting your score\n")
 
@@ -94,7 +94,7 @@ with the next 5 questions!\n""")
     else:
         print("Starting...")
         time.sleep(1)
-    
+
     questions = [
         "Why is Percy declared 'undetermined' when he first gets to camp?",
         "In 'the Lightning Thief', why is Percy wanted in the mortal world?",
