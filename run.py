@@ -7,6 +7,9 @@
 # - Refrain user from put anything as answer; Accpecting A, B, C or D as answer
 # Finish the quiz informing the score and asking about restart
 
+import time
+
+
 def get_valid_name():
     while True:
         name = input("First of all, what's your name? ")
@@ -14,6 +17,18 @@ def get_valid_name():
             return name
         else:
             print("Hey, it's an invalid name! Only alphabetic characters.")
+
+
+def run_quiz(questions, alternatives, correct_answers, user_name):
+    for i in range(len(questions)):
+        print(f"\nQuestion {i+1}: {questions[i]}")
+        for option in alternatives[i]:
+            print(option)
+
+    time.sleep(1)
+    print("Bravo!! We're now counting your score\n")
+
+    time.sleep(2)
 
 
 def main():
@@ -49,6 +64,7 @@ with the next 5 questions!\n""")
         quit()
     else:
         print("Starting...")
+        time.sleep(1)
     
     questions = [
         "Why is Percy declared 'undetermined' when he first gets to camp?",
@@ -79,3 +95,15 @@ did the gray sisters say?""",
     ]
 
     correct_answers = ['C', 'B', 'C', 'D', 'A']
+
+    while True:
+        run_quiz(questions, alternatives, correct_answers, user_name)
+
+        play_again = input("Do you want to retry? (press Y for yes): ").upper()
+        if play_again != "Y":
+            print(f"Thank you, {user_name}! Keep listening us in Spotify")
+            break
+
+
+if __name__ == "__main__":
+    main()
