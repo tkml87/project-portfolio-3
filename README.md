@@ -17,7 +17,7 @@ Visit the deployed site: [Percy Jackson's Quiz](https://percy-jackson-4c68baad7d
     - [Languages Used](#languages-used)
     - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
   - [Deployment](#deployment)
-  - [Testing](#testing)
+  - [Validator Testing](#validator-testing)
   - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content)
@@ -63,12 +63,9 @@ The site was deployed using Heroku - <https://percy-jackson-4c68baad7d9e.herokua
 
 I followed the below steps when deploying my project to Heroku, based on the Code Institute instructions:
 
-* Add to requirements.txt file:-
-pip3 freeze > requirements.txt
-Commit changes to Github:
-git commit -m "Add requirements for deployment”
+* Fork or clone [my repository](https://github.com/tkml87/project-portfolio-3)
 
-In HEROKU after creating the account:
+After login in HEROKU:
 
 1. "Create new App"
 
@@ -84,8 +81,8 @@ In HEROKU after creating the account:
 
 7. Scroll down to Buildpacks and press the icon for Python, click Save Changes, then press the icon for Nodejs and save changes. These Buildpacks need to be in below order:
 
-Python 
-NodeJS
+- Python 
+- NodeJS
 
 8. Go to Deploy section tab and scroll down to Deployment Method. I connected to my Github pages and could thereafter search for my Github Repository "Parents Allowance Calculator" and then click connect.
 
@@ -96,7 +93,7 @@ NodeJS
 11. After project has been deployed successfully I clicked the View-button to see the program run in the terminal.
 
 
-## AUTOMATED TESTING
+## Validator Testing
 
 The game prevents the user from puting non-characters as name, inputing an answer that's differ from A, B, C and D, as well proceeding without confirm it. It contains a score validation and the user has 2 types of final messages depending on his/her performance. Due to its simplicity, there are no known bugs.
 
