@@ -20,15 +20,25 @@ def get_valid_name():
 
 
 def run_quiz(questions, alternatives, correct_answers, user_name):
+    score = 0
     for i in range(len(questions)):
         print(f"\nQuestion {i+1}: {questions[i]}")
         for option in alternatives[i]:
             print(option)
 
+        user_input = get_user_answer()
+        score += check_answer(user_input, correct_answers[i])
+    
     time.sleep(1)
     print("Bravo!! We're now counting your score\n")
 
     time.sleep(2)
+
+    if score == 5:
+        print(f"Well done, {user_name}! You nailed it! Scored 5/5")
+    else:
+        print(f"""Thank you for participating, {user_name}!
+You can improve next time... Your score was {score}/5""")
 
 
 def main():
